@@ -15,19 +15,62 @@
 
  <table class="gameBoard">
   <tr>
-    <td ng-click="game.addX()" data-num="1" class="cell">{{ game.storeMoves[0] }}</td>
-    <td ng-click="" data-num="2" class="cell">{{ game.storeMoves[1] }}</td>
-    <td ng-click="" data-num="3" class="cell">{{ game.storeMoves[2] }}</td>
+    <td ng-model="clicked" ng-click="game.assignMove(1)" id="1" class="cell">
+      {{ game.storeMoves[0] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+
+    <td ng-click="game.assignMove" id="2" class="cell">
+      {{ game.storeMoves[1] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+
+    <td ng-click="game.assignMove" id="3" class="cell">
+      {{ game.storeMoves[2] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
   </tr>
+
   <tr>
-    <td ng-click="" data-num="4" class="cell">{{ game.storeMoves[3] }}</td>
-    <td ng-click="" data-num="5" class="cell">{{ game.storeMoves[4] }}</td>
-    <td ng-click="" data-num="6" class="cell">{{ game.storeMoves[5] }}</td>
+    <td ng-click="game.assignMove" id="4" class="cell">
+      {{ game.storeMoves[3] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+
+    <td ng-click="game.assignMove" id="5" class="cell">
+      {{ game.storeMoves[4] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+
+    <td ng-click="game.assignMove" id="6" class="cell">
+      {{ game.storeMoves[5] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
   </tr>
+
   <tr>
-    <td ng-click="" data-num="7" class="cell">{{ game.storeMoves[6] }}</td>
-    <td ng-click="" data-num="8" class="cell">{{ game.storeMoves[7] }}</td>
-    <td ng-click="" data-num="9" class="cell">{{ game.storeMoves[8] }}</td>
+    <td ng-click="game.assignMove" id="7" class="cell">
+      {{ game.storeMoves[6] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+    <td ng-click="game.assignMove" id="8" class="cell">
+      {{ game.storeMoves[7] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
+
+    <td ng-click="game.assignMove" id="9" class="cell">
+      {{ game.storeMoves[8] }}
+      <p ng-if="game.moveX.indexOf(1)!==-1">x</p>
+      <p ng-if="game.moveO.indexOf(1)!==-1">o</p>
+    </td>
   </tr>
 </table>
   
