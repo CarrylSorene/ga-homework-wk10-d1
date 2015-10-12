@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gameApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular TicTacToe</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/gameController.js"></script>
+  <link href="css/game.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-controller="GameController as game">
+
+<h1>Tic Tac Toe</h1>
+<h2>Player One, click the grid to place the first x. Player Two will be o</h2>
+
+ <table class="gameBoard">
+  <tr>
+    <td ng-click="this.add" data-num="1" class="cell"></td>
+    <td data-num="2" class="cell"></td>
+    <td data-num="3" class="cell"></td>
+  </tr>
+  <tr>
+    <td data-num="4" class="cell"></td>
+    <td data-num="5" class="cell"></td>
+    <td data-num="6" class="cell"></td>
+  </tr>
+  <tr>
+    <td data-num="7" class="cell"></td>
+    <td data-num="8" class="cell"></td>
+    <td data-num="9" class="cell"></td>
+  </tr>
+</table>
+  
+</body>
+</html>
