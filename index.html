@@ -15,19 +15,19 @@
 
  <table class="gameBoard">
   <tr>
-    <td ng-click="this.add" data-num="1" class="cell"></td>
-    <td data-num="2" class="cell"></td>
-    <td data-num="3" class="cell"></td>
+    <td ng-click="game.addX()" data-num="1" class="cell">{{ game.storeMoves[0] }}</td>
+    <td ng-click="" data-num="2" class="cell">{{ game.storeMoves[1] }}</td>
+    <td ng-click="" data-num="3" class="cell">{{ game.storeMoves[2] }}</td>
   </tr>
   <tr>
-    <td data-num="4" class="cell"></td>
-    <td data-num="5" class="cell"></td>
-    <td data-num="6" class="cell"></td>
+    <td ng-click="" data-num="4" class="cell">{{ game.storeMoves[3] }}</td>
+    <td ng-click="" data-num="5" class="cell">{{ game.storeMoves[4] }}</td>
+    <td ng-click="" data-num="6" class="cell">{{ game.storeMoves[5] }}</td>
   </tr>
   <tr>
-    <td data-num="7" class="cell"></td>
-    <td data-num="8" class="cell"></td>
-    <td data-num="9" class="cell"></td>
+    <td ng-click="" data-num="7" class="cell">{{ game.storeMoves[6] }}</td>
+    <td ng-click="" data-num="8" class="cell">{{ game.storeMoves[7] }}</td>
+    <td ng-click="" data-num="9" class="cell">{{ game.storeMoves[8] }}</td>
   </tr>
 </table>
   
